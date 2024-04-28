@@ -12,9 +12,10 @@
 
 // typeof get the type of the value data
 
-console.log('null',typeof null);
-console.log('undefined',typeof undefined);
-let func = function(){
-    return true;
-}
-console.log('function',typeof func);
+// console.log('null',typeof null);
+// console.log('undefined',typeof undefined);
+// let func = function(){
+//     return true;
+// }
+// console.log('function',typeof func);
+console.log(typeof NaN);
