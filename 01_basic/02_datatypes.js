@@ -15,7 +15,7 @@
 // console.log('null',typeof null);
 // console.log('undefined',typeof undefined);
 // let func = function(){
-//     return true;
+//     console.log('functions');
 // }
 // console.log('function',typeof func);
-console.log(typeof NaN);
+//console.log(typeof NaN);
