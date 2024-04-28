@@ -12,6 +12,9 @@
 
 // typeof get the type of the value data
 
-console.log(typeof null);
-console.log(typeof undefined);
-
+console.log('null',typeof null);
+console.log('undefined',typeof undefined);
+let func = function(){
+    return true;
+}
+console.log('function',typeof func);
