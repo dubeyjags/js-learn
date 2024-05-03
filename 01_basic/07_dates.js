@@ -1,7 +1,7 @@
 // use Temporal for dates like Math for future
 
 let mydate = new Date();
-//console.log(mydate);
+// console.log(mydate);
 // console.log('toString() - ',mydate.toString());
 // console.log('toDateString() - ',mydate.toDateString());
 // console.log('toJSON() - ',mydate.toJSON());
@@ -22,12 +22,20 @@ let myTimeStamp = Date.now(); // get in milliseconds
 // console.log(Math.floor(Date.now() / 1000));
 
 let newDate = new Date();
-// console.log(newDate);
-// console.log(newDate.getMonth() + 1);
-// console.log(newDate.getDay());
-// console.log(newDate.getHours());
-// console.log(newDate.getFullYear());
-// console.log(newDate.getUTCFullYear());
+console.log('newDate',newDate);
+console.log('getMonth',newDate.getMonth() + 1);
+console.log('getDay',newDate.getDay());
+console.log('getHours',newDate.getHours());
+console.log('getMinutes',newDate.getMinutes());
+console.log('getSeconds',newDate.getSeconds());
+console.log('getMilliseconds',newDate.getMilliseconds());
+console.log('getUTCDate',newDate.getUTCDate());
+console.log('getFullYear',newDate.getFullYear());
+console.log('getUTCMonth',newDate.getUTCMonth());
+console.log('getUTCHours',newDate.getUTCHours());
+console.log('getUTCMinutes',newDate.getUTCMinutes());
+console.log('getUTCSeconds',newDate.getUTCSeconds());
+console.log('getUTCMilliseconds',newDate.getUTCMilliseconds());
 
 newDate.toLocaleString('default', {
     weekday: 'long',
