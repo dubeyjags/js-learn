@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : Chai aur code</title>
+    
+</head>
+<body>
+    <div class="parent">
+        <!-- comment for node list -->
+        <div class="child">Mon</div>
+        <div class="child">Tues</div>
+        <div class="child">Wed</div>
+        <div class="child">Thurs</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);        
+    // }
+
+    parent.children[1].style.color="#ff0000";
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+
+    const dayone = document.querySelector('.child');
+    // console.log(dayone);
+    // console.log(dayone.parentElement);
+    // console.log(dayone.nextElementSibling);
+    console.log("Nodes", parent.childNodes); 
+</script>
+</html>
