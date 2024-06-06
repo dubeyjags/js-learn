@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request XML xhr</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <img id="avtar" width="100" />
+    <div id="name"></div>
+    <div id="followers"></div>
+    <script>
+        const avtar = document.getElementById('avtar');
+        const name = document.getElementById('name');
+        const followers = document.getElementById('followers');
+        const reqUrl = 'https://api.github.com/users/hiteshchoudhary';
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', reqUrl);
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState);
+            if(xhr.readyState == 4){
+                const data = JSON.parse(xhr.responseText);
+                console.table(data);
+                avtar.src= data.avatar_url;
+                name.innerText= data.name;
+                followers.innerText= data.followers;
+            }
+        }
+        xhr.send();
+    </script>
+</body>
+</html>
