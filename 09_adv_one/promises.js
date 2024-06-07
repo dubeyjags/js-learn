@@ -95,5 +95,5 @@ consumePromiseFive();
 
 fetch('https://api.github.com/users/dubeyjags')
 .then((res) => res.json())
-.then((data) => console.log(data))
+.then((data) => console.log(data)) 
 .catch((err) => console.log(err))
